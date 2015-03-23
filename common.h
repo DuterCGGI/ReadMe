@@ -5,7 +5,6 @@
 #pragma warning(disable : 4996)
 
 #include <opencv2/opencv.hpp>
-#include <limits>
 #define CV_VER CVAUX_STR(CV_MAJOR_VERSION) CVAUX_STR(CV_MINOR_VERSION) CVAUX_STR(CV_SUBMINOR_VERSION)
 #ifdef _DEBUG
 #define MY_LIB(name) name "d"
@@ -31,17 +30,4 @@
 #pragma comment(lib, CV_LIB("video"))
 
 
-typedef struct Opts
-{
-	double prescale;
-	int    xk_iter;
-	double gamma_correct;
-	int    k_thresh;
-	int    kernel_size;
-	int    saturation;
-	double lambda_pixel;
-	double lambda_grad;
-}Opts;
-
-
-#endif // LAMP_LIBCFG_H
+#endif 
